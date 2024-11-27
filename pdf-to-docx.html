@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF to DOCX Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Container -->
+<div class="container">
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Convert PDF to DOCX</h1>
+        <p class="description">Easily convert your PDF files into DOCX format!</p>
+    </div>
+
+    <!-- Upload Area -->
+    <div class="upload-area">
+        <input type="file" id="pdf-input" accept=".pdf">
+        <button class="upload-btn" onclick="document.getElementById('pdf-input').click()">Choose PDF</button>
+        <div id="file-info" class="upload-info">No file selected</div>
+    </div>
+
+    <!-- Button to Convert -->
+    <div class="button-area">
+        <button id="convert-pdf-btn" disabled>Convert to DOCX</button>
+    </div>
+
+    <!-- Status Message -->
+    <div id="status-message" class="status"></div>
+
+    <!-- Link to Home Page -->
+    <div class="link">
+        <a href="index.html">Go Back to PDF Creator</a>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.12.313/pdf.min.js"></script>
+<script src="pdf-to-docx.js"></script>
+</body>
+</html>

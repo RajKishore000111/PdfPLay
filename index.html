@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create PDF</title>
+    <link rel="stylesheet" href="style.css"> <!-- Ensure correct path to your CSS file -->
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Create PDF from Image 📸 ➡️ 📑</h1>
+            <p class="description">Upload your image and create a PDF in seconds. Simple and fun! 🌟</p>
+        </div>
+
+        <div class="upload-area">
+            <label for="image-input" class="upload-btn">📤 Choose Image</label>
+            <input type="file" id="image-input" accept="image/*">
+        </div>
+
+        <div class="upload-info">
+            <span id="image-info">No image selected</span>
+        </div>
+
+        <div class="button-area">
+            <button id="create-pdf" disabled>Create PDF 🎉</button>
+        </div>
+
+        <div class="status">
+            <span id="pdf-status-message"></span>
+        </div>
+
+        <div class="link">
+            <a href="docx-to-pdf.html">Go to DOCX to PDF Converter</a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+    <script src="script.js"></script>
+    <!-- Link to PDF to DOCX page 
+<div class="link">
+    <a href="pdf-to-docx.html">Go to PDF to DOCX Converter</a>
+</div>-->
+</body>
+</html>

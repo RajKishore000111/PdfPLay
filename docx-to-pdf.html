@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert DOCX to PDF</title>
+    <link rel="stylesheet" href="style.css"> <!-- Ensure correct path to your CSS file -->
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Convert DOCX to PDF 📄 ➡️ 📑</h1>
+            <p class="description">Upload your DOCX file and convert it into a neat PDF. Simple and easy! 🌟</p>
+        </div>
+
+        <div class="upload-area">
+            <label for="docx-input" class="upload-btn">📤 Choose DOCX File</label>
+            <input type="file" id="docx-input" accept=".docx">
+        </div>
+
+        <div class="upload-info">
+            <span id="docx-info">No DOCX selected</span>
+        </div>
+
+        <div class="button-area">
+            <button id="convert-docx" disabled>Convert to PDF 🎉</button>
+        </div>
+
+        <div class="status">
+            <span id="conversion-status-message"></span>
+        </div>
+
+        <div class="link">
+            <a href="index.html">Back to Create PDF</a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+    <script src="docx-to-pdf.js"></script>
+</body>
+</html>

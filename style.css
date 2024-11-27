@@ -1,0 +1,180 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f8ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Container */
+.container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    animation: bounceIn 1s ease-out;
+}
+
+/* Header */
+.header h1 {
+    font-size: 36px;
+    color: #ff6f61;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    animation: popIn 1s ease-out;
+}
+
+.header .description {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+    font-style: italic;
+    animation: slideUp 1s ease-out;
+}
+
+/* Upload Area */
+.upload-area {
+    margin: 20px 0;
+}
+
+.upload-btn {
+    background-color: #ff6f61;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(255, 111, 97, 0.4);
+    display: inline-block;
+    border: none;
+}
+
+.upload-btn:hover {
+    background-color: #ff4d3f;
+    box-shadow: 0 10px 20px rgba(255, 111, 97, 0.6);
+    transform: scale(1.05);
+}
+
+input[type="file"] {
+    display: none;
+}
+
+/* Upload Info */
+.upload-info {
+    margin: 10px 0;
+    color: #888;
+    font-size: 14px;
+}
+
+/* Button Area */
+.button-area {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #34c759;
+    color: white;
+    padding: 12px 35px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+button:hover {
+    background-color: #28a745;
+    transform: scale(1.05);
+}
+
+/* Status Message */
+.status {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.status.error {
+    color: red;
+}
+
+.status.success {
+    color: #34c759;
+}
+
+/* Link */
+.link {
+    margin-top: 30px;
+}
+
+.link a {
+    color: #ff6f61;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.link a:hover {
+    text-decoration: underline;
+    color: #ff4d3f;
+}
+
+/* Animations */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
